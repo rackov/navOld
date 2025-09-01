@@ -1,0 +1,31 @@
+grpc_port = 50051
+metrics_port = 9091
+nats_url = "nats://localhost:4222"
+log_level = "DEBUG"
+
+[[protocols]]
+  id = "c3d4e5f6-a7b8-9012-3456-7890abcdef2"
+  name = "ARNAVI"
+  port = 9997
+  active = true
+
+[[protocols]]
+  id = "5a7f1f69-d26f-43a5-9a1e-54d5707541ec"
+  name = "ARNAVI"
+  port = 9998
+  active = true
+
+[[protocols]]
+  id = "2e44a907-75db-4d95-bb6d-fc95a85107fc"
+  name = "ARNAVI"
+  port = 9999
+  active = true
+
+[logging]
+  file_path = "./logs/receiver.log"
+
+# Настройки NATS
+[nats]
+# Временно отключить публикацию в NATS Stream.
+# true - отключить, false - включить.
+publishing_disabled = true
