@@ -4,6 +4,7 @@ package proto;
 
 option go_package = "NavControlSystem/proto";
 
+
 // Общий сервис для управления логированием на любом из сервисов
 service LoggingControl {
     rpc SetLogLevel(SetLogLevelRequest) returns (SetLogLevelResponse);
